@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Gestion des patient',
+    'name': 'Gestion des patients',
     'version': '1.1',
     'category': 'Sante',
     'sequence': 75,
