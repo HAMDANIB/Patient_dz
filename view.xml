@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem 
+		name="Patient" 
+		id="Patient_menu_id" 
+		sequence="25"/>
+			<menuitem 
+			name="Admissions" 
+			id="Admissions_menu_category_id" 
+			parent="Patient_menu_id" 
+			sequence="10"/>
+				<menuitem 
+				name="Patients" 
+				action="base.action_res_users"
+				id="Patients_menu_id" 
+				parent="Admissions_menu_category_id" 
+				sequence="5"/>
+				<menuitem 
+				action="base.action_res_users"
+				name="Admissions" 
+				id="Admission_menu_id" 
+				parent="Admissions_menu_category_id" 
+				sequence="10"/>
+				<menuitem 
+				action="base.action_res_users"
+				name="Gardes malades" 
+				id="Garde_malade_menu_id" 
+				parent="Admissions_menu_category_id" 
+				sequence="15"/>
+				<menuitem 
+				action="base.action_res_users"
+				name="Transferts" 
+				id="Transferts_menu_id" 
+				parent="Admissions_menu_category_id" 
+				sequence="20"/>				
+				<menuitem 
+				name="Sorties" 
+				action="base.action_res_users"
+				id="Sortie_menu_id" 
+				parent="Admissions_menu_category_id" 
+				sequence="25"/>
+			<menuitem 
+			name="Fiche navette" 
+			id="Fiche_navette_menu_category_id" 
+			parent="Patient_menu_id" 
+			sequence="20"/>
+				<menuitem 
+				name="Traitements" 
+				action="base.action_res_users"
+				id="Traitements_menu_id" 
+				parent="Fiche_navette_menu_category_id" 
+				sequence="5"/>				
+				<menuitem 
+				name="Actes internes" 
+				action="base.action_res_users"
+				id="Actes_int_menu_id" 
+				parent="Fiche_navette_menu_category_id" 
+				sequence="10"/>
+				<menuitem 
+				name="Actes externes" 
+				action="base.action_res_users"
+				id="Actes_ext_menu_id" 
+				parent="Fiche_navette_menu_category_id" 
+				sequence="15"/>
+			<menuitem 
+			name="Décompte" 
+			id="decompte_menu_category_id" 
+			parent="Patient_menu_id" 
+			sequence="30"/>
+				<menuitem 
+				name="Quittances" 
+				action="base.action_res_users"
+				id="Quittances_menu_id" 
+				parent="decompte_menu_category_id" 
+				sequence="5"/>
+				<menuitem 
+				name="Factures (Participation du patient)" 
+				action="base.action_res_users"
+				id="Fact_Par_pat_menu_id" 
+				parent="decompte_menu_category_id" 
+				sequence="10"/>
+				<menuitem 
+				name="Factures (P.J.M.H)" 
+				action="base.action_res_users"
+				id="Fact_Pjmh_menu_id" 
+				parent="decompte_menu_category_id" 
+				sequence="15"/>			
+			<menuitem 
+			name="Données de base" 
+			id="donnee_base_menu_category_id" 
+			parent="Patient_menu_id" 
+			sequence="40"/>
+				<menuitem 
+				name="Etablissements de santé" 
+				action="base.action_res_users"
+				id="etab_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="5"/>
+				<menuitem 
+				name="Services/Unités" 
+				action="base.action_res_users"
+				id="Serv_unit_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="10"/>			
+				<menuitem 
+				name="Actes Médicaux" 
+				action="base.action_res_users"
+				id="Actes_medic_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="15"/>
+				<menuitem 
+				name="Actes Infirmiers" 
+				action="base.action_res_users"
+				id="Actes_inf_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="20"/>
+				<menuitem 
+				name="Diagnostics" 
+				action="base.action_res_users"
+				id="diag_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="25"/>
+				<menuitem 
+				name="Médicaments" 
+				action="base.action_res_users"
+				id="medic_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="30"/>
+				<menuitem 
+				name="Caisses de sécurité" 
+				action="base.action_res_users"
+				id="caisse_sec_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="35"/>
+				<menuitem 
+				name="Compagnies d'assurance" 
+				action="base.action_res_users"
+				id="comp_ass_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="40"/>
+				<menuitem 
+				name="Wilayates" 
+				action="base.action_res_users"
+				id="wilaya_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="45"/>
+				<menuitem 
+				name="Communes" 
+				action="base.action_res_users"
+				id="comm_menu_id" 
+				parent="donnee_base_menu_category_id" 
+				sequence="50"/>
+    </data>
+</openerp>
